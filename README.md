@@ -49,6 +49,8 @@ If you for some reason don't trust the pre-compiled binaries, you can also compi
     	Number of concurrent threads (default number of logical CPUs)
   -version
     	Print current Aquatone version
+  -no-sandbox
+        Disable Chrome/Chromium sandbox
 ```
 
 ### Giving Aquatone data

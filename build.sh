@@ -30,22 +30,22 @@ create_archive() {
 
 build_linux_amd64() {
   echo "[*] Building linux/amd64 ..."
-  GOOS=linux GOARCH=amd64 go build -o aquatone ..
+  CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o aquatone ..
 }
 
 build_linux_arm64() {
   echo "[*] Building linux/arm64 ..."
-  GOOS=linux GOARCH=arm go build -o aquatone ..
+  CGO_ENABLED=0 GOOS=linux GOARCH=arm go build -o aquatone ..
 }
 
 build_macos_amd64() {
   echo "[*] Building darwin/amd64 ..."
-  GOOS=darwin GOARCH=amd64 go build -o aquatone ..
+  CGO_ENABLED=0 GOOS=darwin GOARCH=amd64 go build -o aquatone ..
 }
 
 build_windows_amd64() {
   echo "[*] Building windows/amd64 ..."
-  GOOS=windows GOARCH=amd64 go build -o aquatone.exe ..
+  CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build -o aquatone.exe ..
 }
 
 rm -rf $BUILD_FOLDER
