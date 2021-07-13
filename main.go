@@ -11,9 +11,9 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"github.com/michenriksen/aquatone/agents"
-	"github.com/michenriksen/aquatone/core"
-	"github.com/michenriksen/aquatone/parsers"
+	"github.com/overjt/aquatone/agents"
+	"github.com/overjt/aquatone/core"
+	"github.com/overjt/aquatone/parsers"
 )
 
 var (

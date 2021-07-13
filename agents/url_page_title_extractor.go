@@ -6,7 +6,7 @@ import (
 	"strings"
 
 	"github.com/PuerkitoBio/goquery"
-	"github.com/michenriksen/aquatone/core"
+	"github.com/overjt/aquatone/core"
 )
 
 type URLPageTitleExtractor struct {
