@@ -2,7 +2,7 @@ package core
 
 const (
 	Name       = "aquatone"
-	Version    = "1.7.2"
+	Version    = ""
 	Author     = "Michael Henriksen"
 	Maintainer = "Jonathan Toledo"
 	Website    = "https://github.com/overjt/aquatone"
