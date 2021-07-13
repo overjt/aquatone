@@ -135,7 +135,7 @@ func (a *URLScreenshotter) screenshotPage(page *core.Page) {
 		"--screenshot=" + a.session.GetFilePath(filePath),
 	}
 
-	if os.Geteuid() == 0 {
+	if os.Geteuid() == 0 || *a.session.Options.NoSandbox {
 		chromeArguments = append(chromeArguments, "--no-sandbox")
 	}
 

@@ -23,6 +23,7 @@ type Options struct {
 	Silent            *bool
 	Debug             *bool
 	Version           *bool
+	NoSandbox         *bool
 }
 
 func ParseOptions() (Options, error) {
@@ -43,6 +44,7 @@ func ParseOptions() (Options, error) {
 		Silent:            flag.Bool("silent", false, "Suppress all output except for errors"),
 		Debug:             flag.Bool("debug", false, "Print debugging information"),
 		Version:           flag.Bool("version", false, "Print current Aquatone version"),
+		NoSandbox:         flag.Bool("no-sanbox", false, "Print current Aquatone version"),
 	}
 
 	flag.Parse()
